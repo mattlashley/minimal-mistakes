@@ -29,3 +29,11 @@
     {% endif %}
   </p>
 {% endif %}
+
+<!-- adding sub title to pages -->
+
+{% if page.subtitle %}
+    <p id="page-subtitle" class="page__subtitle p-name" itemprop="headline">
+    {{ page.subtitle }}
+    </p>
+{% endif %}
